@@ -9,7 +9,7 @@ const AboutPage: React.FC<PageProps> = () => {
         <main>
             <Layout pageTitle="About page">Header with info</Layout>
             <br />
-            <h1>About Me</h1>
+            <h1>About Me 1</h1>
             <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
         </main>
     )
