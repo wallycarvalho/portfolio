@@ -1,7 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import type { HeadFC, PageProps } from "gatsby"
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 
 // Step 2: Define your component
 const AboutPage: React.FC<PageProps> = () => {
