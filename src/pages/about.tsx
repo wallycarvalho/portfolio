@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import Layout from '../components/layout/layout';
 
 // Step 2: Define your component
-export default function AboutPage(): React.ReactNode {
+export default function AboutPage(): ReactNode {
   return (
     <main>
       <Layout pageTitle="About page">Header with info</Layout>
@@ -13,11 +13,11 @@ export default function AboutPage(): React.ReactNode {
   );
 }
 
-export function Head() {
+export const Head: FunctionComponent = function AboutPageHead(): ReactNode {
   return (
     <>
       <title>About Me</title>
       <meta name="description" content="Your description" />
     </>
   );
-}
+};
