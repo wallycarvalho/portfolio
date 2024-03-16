@@ -13,7 +13,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
+export default function Layout({ pageTitle, children }: LayoutProps) {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -55,6 +55,4 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       </main>
     </div>
   );
-};
-
-export default Layout;
+}

@@ -5,7 +5,7 @@ interface SeoProps {
   title: string;
 }
 
-const Seo: React.FC<SeoProps> = ({ title }) => {
+export default function Seo({ title }: SeoProps) {
   const data = useStaticQuery(graphql`
     query {
         site {
@@ -21,6 +21,4 @@ const Seo: React.FC<SeoProps> = ({ title }) => {
   return (
     <title>{title || data.site.siteMetadata.title}</title>
   );
-};
-
-export default Seo;
+}
