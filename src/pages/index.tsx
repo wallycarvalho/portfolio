@@ -5,7 +5,7 @@ import Layout from '../components/layout/layout';
 export default function IndexPage(): ReactNode {
   return (
     <Layout pageTitle="Homepage">
-      I&aposm here now
+      I&#39;m here now
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
         src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"

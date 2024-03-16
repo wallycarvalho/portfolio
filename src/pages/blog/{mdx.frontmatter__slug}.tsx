@@ -5,7 +5,7 @@ import {
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 import Layout from '../../components/layout/layout';
 
-interface Frontmatter {
+type Frontmatter = {
   title: string;
   date: string;
   slug: string;
@@ -13,21 +13,17 @@ interface Frontmatter {
   hero_image_alt: string;
   hero_image_credit_link: string;
   hero_image_credit_text: string;
-}
+};
 
-interface Node {
+type Node = {
   id: string;
   excerpt: string;
   frontmatter: Frontmatter;
-}
+};
 
-interface BlogPostProps {
+type BlogPostProps = {
   mdx: Node;
-}
-
-// interface BlogPostProps {
-//   data: Mdx;
-// }
+};
 
 export default function BlogPost({ data, children }: PageProps<BlogPostProps>): ReactNode {
   const image = getImage(data.mdx.frontmatter.hero_image);
