@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout/layout';
 
-export default function IndexPage() {
+export default function IndexPage(): ReactNode {
   return (
     <Layout pageTitle="Homepage">
       I&aposm here now
@@ -15,6 +15,6 @@ export default function IndexPage() {
   );
 }
 
-export function Head() {
+export const Head: FunctionComponent = function HomeHead() {
   return <title>Home Page</title>;
-}
+};

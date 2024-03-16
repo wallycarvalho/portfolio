@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { Link } from 'gatsby';
 
-export default function NotFoundPage(): React.ReactNode {
+export default function NotFoundPage(): ReactNode {
   return (
     <main>
       <h1>Page not found</h1>
@@ -26,6 +26,6 @@ export default function NotFoundPage(): React.ReactNode {
   );
 }
 
-export function Head() {
-  return <title>Not found</title>;
-}
+export const Head: FunctionComponent = function NotFoundHead() {
+  return <title>Not found. Please go back</title>;
+};

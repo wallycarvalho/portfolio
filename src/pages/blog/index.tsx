@@ -1,28 +1,28 @@
-import * as React from 'react';
+import React, { ReactNode } from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 import Layout from '../../components/layout/layout';
 
-interface Frontmatter {
+type Frontmatter = {
   title: string;
   date: string;
   slug: string;
-}
+};
 
-interface Node {
+type Node = {
   id: string;
   excerpt: string;
   frontmatter: Frontmatter;
-}
+};
 
-interface NodeProp {
+type NodeProp = {
   nodes: Node[];
-}
+};
 
-interface BlogPageProps {
+type BlogPageProps = {
   allMdx: NodeProp;
-}
+};
 
-export default function BlogPage({ data }: PageProps<BlogPageProps>): React.ReactNode {
+export default function BlogPage({ data }: PageProps<BlogPageProps>): ReactNode {
   return (
     <Layout pageTitle="My Blog Posts">
       {

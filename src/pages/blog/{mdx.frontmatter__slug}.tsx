@@ -1,10 +1,9 @@
-import * as React from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import {
   graphql, HeadProps, Link, PageProps,
 } from 'gatsby';
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 import Layout from '../../components/layout/layout';
-import Seo from '../../components/seo/seo';
 
 interface Frontmatter {
   title: string;
@@ -30,7 +29,7 @@ interface BlogPostProps {
 //   data: Mdx;
 // }
 
-export default function BlogPost({ data, children }: PageProps<BlogPostProps>) {
+export default function BlogPost({ data, children }: PageProps<BlogPostProps>): ReactNode {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
   return (
@@ -74,6 +73,8 @@ query MyQuery($frontmatter__slug: String = "") {
   }
 `;
 
-export function Head({ data }: HeadProps<BlogPostProps>) {
-  return <Seo title={data.mdx.frontmatter.title} />;
-}
+export const Head: FunctionComponent<HeadProps<BlogPostProps>> = function BlogPostHead(
+  { data }: HeadProps<BlogPostProps>,
+) {
+  return <title>{data.mdx.frontmatter.title}</title>;
+};
