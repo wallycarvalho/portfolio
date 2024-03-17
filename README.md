@@ -1,49 +1,33 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+## This Project
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+This is the home repo for my portfolio. Welcome! 😇
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+Here you can find some of the tooling and frontend techniques that demonstrate some of the qualities I have as an engineer. As of March of 2024, this is still very much in development. Please navigate to the **Issues** or **Project** tabs to check the project's status as well its roadmap.
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
 
-2.  **Start developing.**
+## Branching Naming Strategy
 
-    Navigate into your new site’s directory and start it up.
+Throughout my career I have tried a handful of strategies and they all worked. For this project, I will follow a simple and effective pattern:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+ - <type>[optional scope]: <description>
 
-3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+ > This is the pattern from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+## Trunk-based development
 
-4.  **Learn more**
+Ever since learning about trunk-based development in 2021, I really grow fond of the approach. I believe it allows engineers the flexibility and autonomy to, in addition to safely push new features, to experiment. I am a big proponent of novel solutions and experimentation, so to me it's a no brainer.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+For platform, I considered three platforms: PostHog, Unleash, and Growthbook. 
 
-## 🚀 Quick start (Netlify)
+PostHog is very much like a complete platform that includes analytics and other interesting features but it is quite overwhelming for this use case. 
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Unleash and Growthbook are a bit smaller and manageable so either works. Unleash it is. I made the choice based on how the UI looks because features offered they are both complete for me.
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+
+## Storybook
+
+Most components were or will be built from scratch to demonstrate a few things I have in mind. The plan is to release a storybook page with all components built so you can see for yourself what I have built. 
+
+🚧 _In construction_
