@@ -10,7 +10,7 @@ Here you can find some of the tooling and frontend techniques that demonstrate s
 
 Throughout my career I have tried a handful of strategies and they all worked. For this project, I will follow a simple and effective pattern:
 
- - <type>[optional scope]: <description>
+ - _type_  _[optional scope]_: description
 
 
  > This is the pattern from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
