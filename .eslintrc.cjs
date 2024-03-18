@@ -4,9 +4,10 @@ module.exports = {
         "es2021": true
     },
     "extends": [
-        "airbnb", 
+        "airbnb",
         "airbnb-typescript",
-        "airbnb/hooks"
+        "airbnb/hooks",
+        "plugin:storybook/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
