@@ -1,10 +1,12 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout/layout';
+import Button from '../components/button';
 
 export default function IndexPage(): ReactNode {
   return (
     <Layout pageTitle="Homepage">
+      <Button label="test" />
       I&#39;m here now
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
